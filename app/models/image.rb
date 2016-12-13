@@ -1,3 +1,3 @@
-class Post < ApplicationRecord
+class Image < ApplicationRecord
 	has_many :comments, as: :commentable
 end
