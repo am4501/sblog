@@ -28,8 +28,9 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
 	<p>
-		<%= f.label current_user.username %><br />
+		<%= f.label :username, current_user.username %><br />
 		<%= f.text_area :body %>
+   		
 	</p>
 
 	<p>
