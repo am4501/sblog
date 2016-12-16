@@ -13,6 +13,8 @@
   <div class="container">
      
             <%= link_to 'Simple BLOG', root_path, class: 'navbar-brand' %>
+            <p class="navbar-text"><%= notice %></p>
+            <p class="navbar-text"><%= alert %></p>
   <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
 
@@ -28,17 +30,7 @@
   </div>
 </nav>
 
-<div id="main-container" class="container">
-      <div class="row">
-        <div class="col-xs-3">
-          
-
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
-
-          </div>
-        
-          <div class="col-xs-9">
+<div class="container">
             </br>
             </br>
             <%= yield %>
