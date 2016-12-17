@@ -1,6 +1,7 @@
 <!-- <p id="notice"><%= notice %></p> 
 <p class="alert"><%= alert %></p> -->
-
+</br>
+</br>
 <p>
   <strong>Title:</strong>
   <%= @post.title %> 
@@ -20,8 +21,8 @@
   <%= @post.content %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary btn-xs' %> |
-<%= link_to 'Back', posts_path, class: 'btn btn-primary btn-xs' %>
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-default btn-xs' %> |
+<%= link_to 'Back', posts_path, class: 'btn btn-default btn-xs' %>
 <br />
 
 <br /><strong>Comments:</strong><br />
@@ -44,7 +45,7 @@
 	</p>
 
 	<p>
-		<%= f.submit 'Create comment', :class => 'btn btn-primary' %>
+		<%= f.submit 'Create comment', :class => 'btn btn-default' %>
 	</p>
 <% end %>
 
